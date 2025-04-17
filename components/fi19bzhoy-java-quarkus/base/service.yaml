@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata: 
+  labels: 
+    app.kubernetes.io/instance: fi19bzhoy-java-quarkus
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: fi19bzhoy-java-quarkus 
+  name: fi19bzhoy-java-quarkus
+spec:
+  ports:
+  - port: 8081 
+    targetPort: 8081 
+  selector:
+    app.kubernetes.io/instance: fi19bzhoy-java-quarkus 
